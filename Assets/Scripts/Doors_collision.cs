@@ -6,7 +6,7 @@ public class Doors_collision : MonoBehaviour
 {
     // public GameObject other;
     void OnCollisionEnter2D(Collision2D other) {
-        if(other.gameObject.name == "Character"){
+        if(other.gameObject.tag == "Player"){
             switch(name){
                 case "up_door":
                 other.transform.position = new Vector3(other.transform.position.x,other.transform.position.y+1.8f,other.transform.position.z);

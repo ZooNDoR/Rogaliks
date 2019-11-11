@@ -8,12 +8,12 @@ public class Controller : MonoBehaviour
     public Vector2 direction;
     public float speed = 5;
     float x,y;
+    
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D> ();
     }
-
     // Update is called once per frame
     void FixedUpdate()
     {

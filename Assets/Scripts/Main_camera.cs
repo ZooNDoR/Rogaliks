@@ -8,9 +8,8 @@ public class Main_camera : MonoBehaviour
     public GameObject Character;
     private Vector3 C_position = new Vector3(0,0,0);
     // Start is called before the first frame update
-    void Start()
-    {
-        
+    void Start(){
+        Character = GameObject.FindWithTag("Player");
     }
     void FixedUpdate() {
         new_pos = Character.transform.position;

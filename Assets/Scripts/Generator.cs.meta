@@ -4,6 +4,8 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
+  - Character: {fileID: 2459568729771183726, guid: 568bfe7db76b6564d9a3710564b33324,
+      type: 3}
   - Main_room: {fileID: 7747763268860778472, guid: d776da94a107fea4bb6d0717f7d98b5a,
       type: 3}
   - Bonus_room: {fileID: 7467243213079104727, guid: 13c32f186d1d7744c94c38de5b6c88b7,
