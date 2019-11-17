@@ -67,6 +67,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 58921076132770133, guid: 4007213faf7d3ae419ccfa1bb10bfb09,
+        type: 3}
+      propertyPath: room_name
+      value: Trap_room
+      objectReference: {fileID: 0}
+    - target: {fileID: -8805233041321458018, guid: 4007213faf7d3ae419ccfa1bb10bfb09,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8805233041321458018, guid: 4007213faf7d3ae419ccfa1bb10bfb09,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.9382391
+      objectReference: {fileID: 0}
+    - target: {fileID: -8805233041321458018, guid: 4007213faf7d3ae419ccfa1bb10bfb09,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.75
+      objectReference: {fileID: 0}
     - target: {fileID: 4550065561843109455, guid: 4007213faf7d3ae419ccfa1bb10bfb09,
         type: 3}
       propertyPath: m_Color.r

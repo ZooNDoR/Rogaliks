@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Monster
+  - Room
+  - Door
+  - Trap_button
+  - Consumables
   layers:
   - Default
   - TransparentFX

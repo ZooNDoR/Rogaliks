@@ -129,6 +129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 61873936}
+  - component: {fileID: 61873937}
   m_Layer: 0
   m_Name: Aplication
   m_TagString: Untagged
@@ -153,6 +154,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &61873937
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61873935}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0d2c78bd4118655459cdd47ef6a5bbd8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &201918374
 GameObject:
   m_ObjectHideFlags: 0
@@ -163,6 +183,7 @@ GameObject:
   m_Component:
   - component: {fileID: 201918375}
   - component: {fileID: 201918376}
+  - component: {fileID: 201918377}
   m_Layer: 0
   m_Name: logic
   m_TagString: Untagged
@@ -198,19 +219,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Character: {fileID: 2459568729771183726, guid: 568bfe7db76b6564d9a3710564b33324,
     type: 3}
-  Main_room: {fileID: 7747763268860778472, guid: d776da94a107fea4bb6d0717f7d98b5a,
+  main_room: {fileID: 7747763268860778472, guid: d776da94a107fea4bb6d0717f7d98b5a,
     type: 3}
-  Bonus_room: {fileID: 7467243213079104727, guid: 13c32f186d1d7744c94c38de5b6c88b7,
-    type: 3}
-  Monster_room: {fileID: 5710806393588386856, guid: 5ccd425a5e1c11c41a910ec62de9372a,
-    type: 3}
-  Trap_room: {fileID: 8319560489616525174, guid: 1a4c50292e94f894dbfb3eb54e84777f,
-    type: 3}
-  Boss_room: {fileID: 6317471624557487770, guid: 00eee4018047df64d82a3ede647d776d,
-    type: 3}
+  bonus_room:
+  - {fileID: 1307673592267763325, guid: 38614bf9811435d4c84dfb3cf7527819, type: 3}
+  - {fileID: 8633829228532599690, guid: 61052302a4389e94b8ffc2c0495d869d, type: 3}
+  - {fileID: 1100802239043144758, guid: 6b850862c06f2cb4593c9ed27120c0ee, type: 3}
+  monster_room:
+  - {fileID: 6680906721985075776, guid: 35a9c762b38d2a04e83c3eda3841e7b3, type: 3}
+  - {fileID: 924356189466790834, guid: b246152a1867c314bb87161102cab6d3, type: 3}
+  trap_room:
+  - {fileID: 4526375374036551514, guid: a8ebe76bf33404a42b6681b759ff9105, type: 3}
+  - {fileID: 5004075715553783273, guid: 4dd46c3a9d5a5fb49b4d512704de9615, type: 3}
+  - {fileID: 6470671512929510089, guid: c486728894ddc8548b66356cc5ab372c, type: 3}
+  - {fileID: 1712386175682741524, guid: b3e2e6dac6f7820419c54b1f6ec3234e, type: 3}
+  - {fileID: 2236144806512265615, guid: 128f9208d36cf0f4196fa8af35669f6a, type: 3}
+  boss_room:
+  - {fileID: 1395275032367507575, guid: c2dfa3dfd0d0ce949a43719016eaaaea, type: 3}
   room_limit_bonus: 3
   room_limit_enemy: 5
-  room_limit_trap: 2
+  room_limit_trap: 3
+--- !u!114 &201918377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201918374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d4c4153d21fadd4d85697cd4153b18c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,7 +290,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd2825858080ec24a840b32cb18db426, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Character: {fileID: 0}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -302,7 +341,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.67868745, y: 0.15920699, z: 1.33}
+  m_LocalPosition: {x: 0, y: 0, z: 1.33}
   m_LocalScale: {x: 0.3, y: 0.29250002, z: 0}
   m_Children: []
   m_Father: {fileID: 1123108199}
@@ -318,7 +357,7 @@ GameObject:
   m_Component:
   - component: {fileID: 594605958}
   m_Layer: 0
-  m_Name: model
+  m_Name: systems
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
