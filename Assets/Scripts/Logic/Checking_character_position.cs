@@ -9,6 +9,7 @@ public class Checking_character_position : MonoBehaviour //  Расчитыва�
     private GameObject[] all_room;  // Все комнаты
     private Vector3 curent_ch_position; // Текущая позиция персонажа
     private Room_info curent_Room_info;  // Скрипт комнаты
+    public Sounds_manager s_m;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,10 +40,12 @@ public class Checking_character_position : MonoBehaviour //  Расчитыва�
         if(!curent_Room_info.cleared)
             {
                 curent_Room_info.Close_door();
-                if(curent_Room_info.room_name == "Monster_room")
+                if((curent_Room_info.room_name == "Monster_room") || ((curent_Room_info.room_name == "Boss_room")))
                 {
                     curent_Room_info.Enable_monsters();
                 }
+                if(curent_Room_info.room_name == "Boss_room")
+                    s_m.Boss_track(true);
             }
     }
     // Update is called once per frame

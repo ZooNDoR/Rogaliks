@@ -77,6 +77,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.7779662
       objectReference: {fileID: 0}
+    - target: {fileID: 3587674151729780128, guid: c90aef0de5581f04288c3ac39c5c7a1d,
+        type: 3}
+      propertyPath: enable
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c90aef0de5581f04288c3ac39c5c7a1d, type: 3}
 --- !u!1001 &3388500422285279098
@@ -101,6 +106,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: M_R_Fatty
       objectReference: {fileID: 0}
+    - target: {fileID: 7959395682211521752, guid: 5ccd425a5e1c11c41a910ec62de9372a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959395682211521752, guid: 5ccd425a5e1c11c41a910ec62de9372a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3998408081583167807, guid: 5ccd425a5e1c11c41a910ec62de9372a,
         type: 3}
       propertyPath: drop.Array.size
@@ -112,16 +127,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1058850593351067134, guid: adba7eea53d39564d97cade455e0504a,
         type: 3}
-    - target: {fileID: 7959395682211521752, guid: 5ccd425a5e1c11c41a910ec62de9372a,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7959395682211521752, guid: 5ccd425a5e1c11c41a910ec62de9372a,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 207181231415778360, guid: 5ccd425a5e1c11c41a910ec62de9372a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -177,6 +182,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6966005319099573164, guid: 5ccd425a5e1c11c41a910ec62de9372a,
+        type: 3}
+      propertyPath: drop.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6966005319099573164, guid: 5ccd425a5e1c11c41a910ec62de9372a,
+        type: 3}
+      propertyPath: drop.Array.data[3]
+      value: 
+      objectReference: {fileID: 1876662705169490925, guid: a2d241b0ea1d9b44bb856a7a982b75ae,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ccd425a5e1c11c41a910ec62de9372a, type: 3}
 --- !u!4 &4716160641015864226 stripped

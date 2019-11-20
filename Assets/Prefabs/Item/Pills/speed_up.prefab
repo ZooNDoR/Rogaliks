@@ -56,6 +56,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4480835323845698612, guid: b40a3dc904655774d851223d6dc0824a,
+        type: 3}
+      propertyPath: m_Name
+      value: speed_up
+      objectReference: {fileID: 0}
+    - target: {fileID: 4480835323845698612, guid: b40a3dc904655774d851223d6dc0824a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Consumables
+      objectReference: {fileID: 0}
     - target: {fileID: 4150920453656994652, guid: b40a3dc904655774d851223d6dc0824a,
         type: 3}
       propertyPath: m_Offset.x
@@ -70,11 +80,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Offset.y
       value: 0.000000029802322
-      objectReference: {fileID: 0}
-    - target: {fileID: 4480835323845698612, guid: b40a3dc904655774d851223d6dc0824a,
-        type: 3}
-      propertyPath: m_Name
-      value: speed_up
       objectReference: {fileID: 0}
     - target: {fileID: 8625883168383697648, guid: b40a3dc904655774d851223d6dc0824a,
         type: 3}
@@ -135,18 +140,12 @@ PrefabInstance:
         type: 3}
       propertyPath: bite
       value: 
-      objectReference: {fileID: 2224578513026184292}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b40a3dc904655774d851223d6dc0824a, type: 3}
 --- !u!1 &7999091867956205933 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4480835323845698612, guid: b40a3dc904655774d851223d6dc0824a,
-    type: 3}
-  m_PrefabInstance: {fileID: 5849441789238754649}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &2224578513026184292 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: -3462654518213031619, guid: b40a3dc904655774d851223d6dc0824a,
     type: 3}
   m_PrefabInstance: {fileID: 5849441789238754649}
   m_PrefabAsset: {fileID: 0}

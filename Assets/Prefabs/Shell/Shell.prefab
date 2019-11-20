@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4935523100372794866}
   - component: {fileID: 1633147240974518358}
   - component: {fileID: 4064253792976012010}
-  - component: {fileID: -1180695148719702646}
   m_Layer: 0
   m_Name: Shell
   m_TagString: Untagged
@@ -133,17 +132,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c04ca0e3b9980e4f887694328739560, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  time_of_living: 5
   owner: 
   damage: 0
-  die: {fileID: 0}
---- !u!247 &-1180695148719702646
-ConstantForce2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3460635190622064798}
-  m_Enabled: 1
-  m_Force: {x: 0, y: 0}
-  m_RelativeForce: {x: 0, y: 0}
-  m_Torque: 0

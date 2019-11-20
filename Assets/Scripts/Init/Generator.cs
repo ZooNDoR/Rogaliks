@@ -58,7 +58,7 @@ public class Generator : MonoBehaviour
             for (int i = 2; i < xlen - 2; i++){
                 for (int j = 2; j < ylen - 2; j++)
                 {
-                    if ((map[i, j] != null) && (map[i, j] != ban))
+                    if ((map[i, j] != null) && (map[i, j] != ban) && (map[i, j].GetComponent<Room_info>().room_name != "Bonus_room"))
                     {
                         for (int u = -1; u <= 1; u++){
                             for (int v = -1; v <= 1; v++)
@@ -74,13 +74,9 @@ public class Generator : MonoBehaviour
                                     }
                                     if (room_limit_all_be >= room_limit_all - room_limit_bonus)
                                     {
-                                        if (room_limit_bonus_be < room_limit_bonus)
-                                        {
-                                            map[i + u, j + v] = bonus_room[Random.Range(0, bonus_room.Length)];
-                                            room_limit_all_be++;
-                                            room_limit_bonus_be++;
-                                            break;
-                                        }
+                                        map[i + u, j + v] = bonus_room[Random.Range(0, bonus_room.Length)];
+                                        room_limit_all_be++;
+                                        room_limit_bonus_be++;
                                     }
                                     else
                                     {
@@ -158,6 +154,10 @@ public class Generator : MonoBehaviour
             }   
         }
         consumables = GameObject.FindGameObjectsWithTag("Consumables");
+        for (int i = consumables.Length-1; i >= 0; i--){
+            Destroy(consumables[i]);
+        }
+        consumables = GameObject.FindGameObjectsWithTag("Monster");
         for (int i = consumables.Length-1; i >= 0; i--){
             Destroy(consumables[i]);
         }

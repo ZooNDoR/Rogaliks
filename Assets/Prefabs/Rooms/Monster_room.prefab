@@ -7,6 +7,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2954257515978372154, guid: 4007213faf7d3ae419ccfa1bb10bfb09,
+        type: 3}
+      propertyPath: drop.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -2954257515978372154, guid: 4007213faf7d3ae419ccfa1bb10bfb09,
+        type: 3}
+      propertyPath: drop.Array.data[0]
+      value: 
+      objectReference: {fileID: 1876662705169490925, guid: a2d241b0ea1d9b44bb856a7a982b75ae,
+        type: 3}
+    - target: {fileID: -2954257515978372154, guid: 4007213faf7d3ae419ccfa1bb10bfb09,
+        type: 3}
+      propertyPath: drop.Array.data[1]
+      value: 
+      objectReference: {fileID: 3815828133174278589, guid: 7bdcae4d9f367ea41928f1ae1ac856f0,
+        type: 3}
+    - target: {fileID: -2954257515978372154, guid: 4007213faf7d3ae419ccfa1bb10bfb09,
+        type: 3}
+      propertyPath: drop.Array.data[2]
+      value: 
+      objectReference: {fileID: 1058850593351067134, guid: adba7eea53d39564d97cade455e0504a,
+        type: 3}
     - target: {fileID: 1475422283638283426, guid: 4007213faf7d3ae419ccfa1bb10bfb09,
         type: 3}
       propertyPath: m_Name

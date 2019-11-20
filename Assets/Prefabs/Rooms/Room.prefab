@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6474226473116060850}
+  - component: {fileID: -2954257515978372154}
   - component: {fileID: 58921076132770133}
   - component: {fileID: 4316494678477940906}
   - component: {fileID: 2811314656439193507}
@@ -44,6 +45,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-2954257515978372154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475422283638283426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0139aea4b06fca7439270d7a9b3eda9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drop: []
 --- !u!114 &58921076132770133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,6 +72,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room_name: 
   cleared: 0
+  drop: []
 --- !u!61 &4316494678477940906
 BoxCollider2D:
   m_ObjectHideFlags: 0

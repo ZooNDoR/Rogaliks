@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8625883168383697648}
   - component: {fileID: 6277992873521336443}
   - component: {fileID: 4150920453656994652}
+  - component: {fileID: -4661691184292447680}
   m_Layer: 0
   m_Name: pill
   m_TagString: Untagged
@@ -44,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d1eb97972c30d44e981e32e89016b51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  s_m: {fileID: 0}
 --- !u!58 &4150920453656994652
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -60,3 +62,24 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!50 &-4661691184292447680
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4480835323845698612}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.1
+  m_LinearDrag: 1
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
