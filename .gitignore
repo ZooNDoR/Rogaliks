@@ -34,3 +34,5 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Assets/Animation.meta
+Assets/Prefabs/Entity/Characters/Characters.meta
