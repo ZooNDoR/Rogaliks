@@ -11,10 +11,10 @@ public class Generator : MonoBehaviour
     public GameObject Character;
     private GameObject ban;
     public GameObject main_room;
-    public GameObject[] bonus_room;
-    public GameObject[] monster_room;
-    public GameObject[] trap_room;
-    public GameObject[] boss_room;
+    private GameObject[] bonus_room;
+    private GameObject[] monster_room;
+    private GameObject[] trap_room;
+    private GameObject[] boss_room;
     private GameObject[,] map;
     private GameObject create_room;
     private GameObject[] consumables;
@@ -26,14 +26,21 @@ public class Generator : MonoBehaviour
     private int room_limit_all;
     
     bool Rand()//absolutely random function
-        {
-            return (Mathf.RoundToInt(Random.Range(0f, 1f))==1)?true:false;
-        }
+    {
+        return (Mathf.RoundToInt(Random.Range(0f, 1f))==1)?true:false;
+    }
     void Awake()
     {
         map = new  GameObject[xlen, ylen];
         Character = Instantiate(Character, new Vector3(0,0,-0.5f), Quaternion.identity);
+        Load_Rooms();
         Generation();
+    }
+    void Load_Rooms() {
+        bonus_room =  Resources.LoadAll<GameObject>("BonusRooms");
+        monster_room =  Resources.LoadAll<GameObject>("MonsterRooms");
+        trap_room = Resources.LoadAll<GameObject>("TrapRooms");
+        boss_room = Resources.LoadAll<GameObject>("BossRooms");
     }
         // Update is called once per frame
     

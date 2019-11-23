@@ -104,6 +104,8 @@ public class Entity : MonoBehaviour
                 s_m.Play_pls(aud_die);
         if(gameObject.GetComponent<Drop>())
             gameObject.GetComponent<Drop>().Drop_(transform.position);
+        if(die_obj)
+            Instantiate(die_obj,transform.position,Quaternion.identity);
         Destroy(gameObject);
     }
 }

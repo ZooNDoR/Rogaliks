@@ -56,6 +56,7 @@ MonoBehaviour:
   damage: 1
   attack_speed: 1
   speed: 3
+  lifetime: 0
   number_keys: 0
   attack_system: {fileID: 591120400436754195}
   greeting: {fileID: 3878850656374617038}
@@ -67,7 +68,7 @@ MonoBehaviour:
   melee_attack: {fileID: 0}
   low_health: {fileID: 0}
   aud_die: {fileID: 8300000, guid: e218c05920e95a14584d7dd7039b18e6, type: 3}
-  die_obj: {fileID: 94542642538258065, guid: ce1f8889849c9414d9a8b6012240e42b, type: 3}
+  die_obj: {fileID: 2919365524781038952, guid: af3ad385654457241a1411100da2d9cb, type: 3}
 --- !u!114 &591120400436754195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,6 +110,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
