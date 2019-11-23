@@ -27,12 +27,13 @@ public class Entity : MonoBehaviour
     public AudioClip aud_die;
 
     public GameObject die_obj;
-
+    private UI_hearts hearts_UI;
     private Sounds_manager s_m;
     // Start is called before the first frame update
     // Update is called once per frame
     void Start()
     {
+        hearts_UI = GameObject.Find("UI_heart").gameObject.GetComponent<UI_hearts>();
         // if (lifetime == 0)
         //     lifetime = Infinity;
         s_m = GameObject.Find("SoundsManager").GetComponent<Sounds_manager>();
@@ -52,9 +53,9 @@ public class Entity : MonoBehaviour
         if (low_health != null)
         {
             if ((health/max_health)<0.30)
-            low_health.mute = false;
-        else
-            low_health.mute = true;
+                low_health.mute = false;
+            else
+                low_health.mute = true;
         }
         
     }
@@ -73,6 +74,8 @@ public class Entity : MonoBehaviour
                     health_down.Play();
             }
             health += how_much;
+            if(gameObject.tag == "Player")
+                hearts_UI.Change_hearts(health);
             break;
             case "damage":
             damage += how_much;
