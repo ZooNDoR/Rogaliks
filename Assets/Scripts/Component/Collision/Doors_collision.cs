@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using UnityEngine.UI;
 
 public class Doors_collision : MonoBehaviour // Перемещает игрока меж комнатами
 {
@@ -13,8 +14,12 @@ public class Doors_collision : MonoBehaviour // Перемещает игрок�
     public SpriteRenderer sprite_rend;
     private Sprite[] sprites;
     private bool locked = false;
+    public Text amount;
     void Awake() {
         sprites = Resources.LoadAll<Sprite>("Doors");
+    }
+    private void Start() {
+        amount = GameObject.Find("Text_key").gameObject.GetComponent<Text>();
     }
     void Skip_charcter(Vector3 pos, Transform tr){
         switch(name){
@@ -45,6 +50,7 @@ public class Doors_collision : MonoBehaviour // Перемещает игрок�
             if (locked && (other.gameObject.GetComponent<Entity>().number_keys > 0) && transform.parent.gameObject.GetComponent<Room_info>().cleared)
             {
                 other.gameObject.GetComponent<Entity>().number_keys--;
+                amount.text = "x" + other.gameObject.GetComponent<Entity>().number_keys;
                 Un_lock();
                 Skip_charcter(other.transform.position, other.transform);
                 GameObject.Find("logic").GetComponent<Checking_character_position>().Change_pos();
