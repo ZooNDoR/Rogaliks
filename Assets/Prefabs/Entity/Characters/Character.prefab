@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7133984267082273805}
-  - component: {fileID: 4606131305921777903}
   - component: {fileID: 4010243592321023811}
   - component: {fileID: 2459568729771183728}
   - component: {fileID: 2459568729771183729}
@@ -43,14 +42,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &4606131305921777903
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2459568729771183726}
-  m_Enabled: 1
 --- !u!212 &4010243592321023811
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -65,6 +56,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

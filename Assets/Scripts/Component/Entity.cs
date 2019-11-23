@@ -38,6 +38,8 @@ public class Entity : MonoBehaviour
         //     lifetime = Infinity;
         s_m = GameObject.Find("SoundsManager").GetComponent<Sounds_manager>();
         attack_system = GetComponent<Attack_system>();
+        if(gameObject.tag == "Player")
+                hearts_UI.Change_hearts(health);
     }
     void FixedUpdate()
     {

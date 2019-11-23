@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 
 public class Generator : MonoBehaviour
 {
-    public GameObject Character;
     private GameObject ban;
     public GameObject main_room;
     private GameObject[] bonus_room;
@@ -19,12 +18,23 @@ public class Generator : MonoBehaviour
     private GameObject create_room;
     private GameObject[] consumables;
 
+    public GameObject[] character;
+     private GameObject use_character;
     public Random rnd = new Random();
 
     private int xlen = 9, ylen = 9;
     public int room_limit_bonus = 3, room_limit_enemy = 10, room_limit_trap = 2;
     private int room_limit_all;
     
+    public void Select_char(string name){
+        foreach (var ch in character)
+        {
+            if(ch.name == name)
+                use_character = ch;
+        }
+        use_character = Instantiate(use_character, new Vector3(0,0,-0.5f), Quaternion.identity);
+
+    }
     bool Rand()//absolutely random function
     {
         return (Mathf.RoundToInt(Random.Range(0f, 1f))==1)?true:false;
@@ -32,7 +42,6 @@ public class Generator : MonoBehaviour
     void Awake()
     {
         map = new  GameObject[xlen, ylen];
-        Character = Instantiate(Character, new Vector3(0,0,-0.5f), Quaternion.identity);
         Load_Rooms();
         Generation();
     }
@@ -54,7 +63,7 @@ public class Generator : MonoBehaviour
         gameObject.GetComponent<Checking_character_position>().Change_pos();
     }
     public void Generation(){
-        Character.transform.position = new Vector3(0,0,0);
+        use_character.transform.position = new Vector3(0,0,0);
         ban = new GameObject("empty");
         room_limit_all = room_limit_bonus + room_limit_enemy + room_limit_trap + 1;
         int room_limit_bonus_be = 0, room_limit_enemy_be = 0, room_limit_trap_be = 0, room_limit_all_be = 0;
