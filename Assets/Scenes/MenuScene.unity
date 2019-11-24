@@ -9211,6 +9211,7 @@ MonoBehaviour:
   menu: {fileID: 179333599}
   pause_window: {fileID: 2014661758}
   end_window: {fileID: 997537742}
+  souds_manager: {fileID: 860525411}
 --- !u!1 &2057287029
 GameObject:
   m_ObjectHideFlags: 0

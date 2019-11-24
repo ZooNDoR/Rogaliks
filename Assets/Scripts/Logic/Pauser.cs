@@ -8,6 +8,7 @@ public class Pauser : MonoBehaviour
     public GameObject menu;
     public GameObject pause_window;
     public GameObject end_window;
+    public GameObject souds_manager;
     private bool pause = false;
     private bool enable = true;
     // Update is called once per frame
@@ -22,11 +23,13 @@ public class Pauser : MonoBehaviour
     public void Pause_on(){
         pause = true;
         Time.timeScale = 0;
+        souds_manager.SetActive(false);
         pause_window.SetActive(true);
     }
     public void Pause_off(){
         pause = false;
         Time.timeScale = 1;
+        souds_manager.SetActive(true);
         pause_window.SetActive(false);
     }
     public void Return_main_menu(){

@@ -27,8 +27,8 @@ public class Room_info : MonoBehaviour
                 if(child.GetComponent<Trap_button>().click == false)
                     return;
             }
-            if(child.tag == "Consumables")
-                return;
+            // if(child.tag == "Consumables")
+            //     return;
         }
         Open_door();
         if((room_name == "Monster_room")||(room_name == "Boss_room"))

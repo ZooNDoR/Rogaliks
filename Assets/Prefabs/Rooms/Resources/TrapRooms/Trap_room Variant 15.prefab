@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: key
       objectReference: {fileID: 0}
+    - target: {fileID: 3815828133174278589, guid: 7bdcae4d9f367ea41928f1ae1ac856f0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Consumables
+      objectReference: {fileID: 0}
     - target: {fileID: 1634353030994016648, guid: 7bdcae4d9f367ea41928f1ae1ac856f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -86,11 +91,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2865744842089079336}
     m_Modifications:
-    - target: {fileID: 2240043234046481657, guid: d19c661e13207e04995a308c19cd1fca,
-        type: 3}
-      propertyPath: m_Name
-      value: Spikes (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 7081976129889643988, guid: d19c661e13207e04995a308c19cd1fca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -156,6 +156,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.88202393
       objectReference: {fileID: 0}
+    - target: {fileID: 2240043234046481657, guid: d19c661e13207e04995a308c19cd1fca,
+        type: 3}
+      propertyPath: m_Name
+      value: Spikes (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19c661e13207e04995a308c19cd1fca, type: 3}
 --- !u!1001 &1806222711616222542
@@ -168,7 +173,7 @@ PrefabInstance:
     - target: {fileID: 8319560489616525174, guid: 1a4c50292e94f894dbfb3eb54e84777f,
         type: 3}
       propertyPath: m_Name
-      value: Trap_room
+      value: Trap_room Variant 15
       objectReference: {fileID: 0}
     - target: {fileID: 4527760556370696038, guid: 1a4c50292e94f894dbfb3eb54e84777f,
         type: 3}
@@ -240,11 +245,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2865744842089079336}
     m_Modifications:
-    - target: {fileID: 2240043234046481657, guid: d19c661e13207e04995a308c19cd1fca,
-        type: 3}
-      propertyPath: m_Name
-      value: Spikes (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 7081976129889643988, guid: d19c661e13207e04995a308c19cd1fca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -310,6 +310,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.88202393
       objectReference: {fileID: 0}
+    - target: {fileID: 2240043234046481657, guid: d19c661e13207e04995a308c19cd1fca,
+        type: 3}
+      propertyPath: m_Name
+      value: Spikes (2)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19c661e13207e04995a308c19cd1fca, type: 3}
 --- !u!1001 &5451050795771954944
@@ -319,11 +324,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2865744842089079336}
     m_Modifications:
-    - target: {fileID: 2240043234046481657, guid: d19c661e13207e04995a308c19cd1fca,
-        type: 3}
-      propertyPath: m_Name
-      value: Spikes (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 7081976129889643988, guid: d19c661e13207e04995a308c19cd1fca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -389,6 +389,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.88202393
       objectReference: {fileID: 0}
+    - target: {fileID: 2240043234046481657, guid: d19c661e13207e04995a308c19cd1fca,
+        type: 3}
+      propertyPath: m_Name
+      value: Spikes (3)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19c661e13207e04995a308c19cd1fca, type: 3}
 --- !u!1001 &6513501375162652732
@@ -398,11 +403,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2865744842089079336}
     m_Modifications:
-    - target: {fileID: 3710574471748261414, guid: 27b52e0dee081de49a2b10da64c426c8,
-        type: 3}
-      propertyPath: m_Name
-      value: Button (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 7295226639135982670, guid: 27b52e0dee081de49a2b10da64c426c8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -468,6 +468,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.88202393
       objectReference: {fileID: 0}
+    - target: {fileID: 3710574471748261414, guid: 27b52e0dee081de49a2b10da64c426c8,
+        type: 3}
+      propertyPath: m_Name
+      value: Button (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27b52e0dee081de49a2b10da64c426c8, type: 3}
 --- !u!1001 &7306402867568587801
@@ -477,11 +482,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2865744842089079336}
     m_Modifications:
-    - target: {fileID: 3710574471748261414, guid: 27b52e0dee081de49a2b10da64c426c8,
-        type: 3}
-      propertyPath: m_Name
-      value: Button
-      objectReference: {fileID: 0}
     - target: {fileID: 7295226639135982670, guid: 27b52e0dee081de49a2b10da64c426c8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -547,6 +547,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.88202393
       objectReference: {fileID: 0}
+    - target: {fileID: 3710574471748261414, guid: 27b52e0dee081de49a2b10da64c426c8,
+        type: 3}
+      propertyPath: m_Name
+      value: Button
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27b52e0dee081de49a2b10da64c426c8, type: 3}
 --- !u!1001 &7979216749112056937
@@ -556,11 +561,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2865744842089079336}
     m_Modifications:
-    - target: {fileID: 2240043234046481657, guid: d19c661e13207e04995a308c19cd1fca,
-        type: 3}
-      propertyPath: m_Name
-      value: Spikes
-      objectReference: {fileID: 0}
     - target: {fileID: 7081976129889643988, guid: d19c661e13207e04995a308c19cd1fca,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -625,6 +625,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.88202393
+      objectReference: {fileID: 0}
+    - target: {fileID: 2240043234046481657, guid: d19c661e13207e04995a308c19cd1fca,
+        type: 3}
+      propertyPath: m_Name
+      value: Spikes
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19c661e13207e04995a308c19cd1fca, type: 3}
