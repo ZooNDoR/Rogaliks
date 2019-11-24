@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: venom
       objectReference: {fileID: 0}
+    - target: {fileID: 6185281332426229093, guid: 021948378f0774244aa44a4136944571,
+        type: 3}
+      propertyPath: m_TagString
+      value: Consumables
+      objectReference: {fileID: 0}
     - target: {fileID: 6185281332426229092, guid: 021948378f0774244aa44a4136944571,
         type: 3}
       propertyPath: m_Color.r

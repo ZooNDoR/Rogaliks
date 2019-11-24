@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading;
 using UnityEngine;
 using System.Threading.Tasks;
+using UnityEngine.UI;
 
 public class Generator : MonoBehaviour
 {
@@ -34,7 +34,6 @@ public class Generator : MonoBehaviour
         }
         use_character = Instantiate(use_character, new Vector3(0,0,-0.5f), Quaternion.identity);
         gameObject.GetComponent<Checking_character_position>().Start();
-
     } 
     public void ClearAll(){
         Clearing();
@@ -163,7 +162,8 @@ public class Generator : MonoBehaviour
                 }
             }
         }
-        gameObject.GetComponent<Checking_character_position>().Change_pos();
+        GameObject.Find("Text_key").GetComponent<Text>().text = "X" + use_character.GetComponent<Entity>().number_keys;
+        gameObject.GetComponent<Checking_character_position>().Start();   
     }
     void Clearing()
     {

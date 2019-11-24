@@ -14,6 +14,7 @@ public class Entity : MonoBehaviour
     public float lifetime;
     public int number_keys = 0;
 
+    public GameObject End_UI;
     public Attack_system attack_system;
 
     public AudioSource greeting;        // Приветствие
@@ -100,14 +101,14 @@ public class Entity : MonoBehaviour
         enable = false;
         if (gameObject.tag == "Monster")
             GameObject.Find("logic").GetComponent<Score_manager>().Add_score(30);
-        // if (gameObject.tag == "Player")
-        //     uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
         if(aud_die!=null)
                 s_m.Play_pls(aud_die);
         if(gameObject.GetComponent<Drop>())
             gameObject.GetComponent<Drop>().Drop_(transform.position);
         if(die_obj)
             Instantiate(die_obj,transform.position,Quaternion.identity);
+        if (gameObject.tag == "Player")
+                GameObject.Find("Pauser").GetComponent<Pauser>().The_end();
         Destroy(gameObject);
     }
 }

@@ -34,4 +34,10 @@ public class Score_manager : MonoBehaviour
         score += how_much;
         run = true;
     }
+    public void Clear_scr(){
+        score = 0;
+        view_score = 0;
+        run = false;
+        Start();
+    }
 }

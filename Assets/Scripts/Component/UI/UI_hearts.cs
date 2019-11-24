@@ -14,7 +14,7 @@ public class UI_hearts : MonoBehaviour
 
         foreach(Transform child in transform)
         {
-            if(x > how_many)
+            if(x >= how_many)
                 break;
             child.gameObject.SetActive(true);
             x++;
