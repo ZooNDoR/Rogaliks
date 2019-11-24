@@ -19,7 +19,7 @@ public class Generator : MonoBehaviour
     private GameObject[] consumables;
 
     public GameObject[] character;
-     private GameObject use_character;
+    private GameObject use_character;
     public Random rnd = new Random();
 
     private int xlen = 9, ylen = 9;
@@ -27,13 +27,18 @@ public class Generator : MonoBehaviour
     private int room_limit_all;
     
     public void Select_char(string name){
-        foreach (var ch in character)
+        foreach (GameObject ch in character)
         {
-            if(ch.name == name)
+            if (ch.name == name)
                 use_character = ch;
         }
         use_character = Instantiate(use_character, new Vector3(0,0,-0.5f), Quaternion.identity);
+        gameObject.GetComponent<Checking_character_position>().Start();
 
+    } 
+    public void ClearAll(){
+        Clearing();
+        Destroy(use_character);
     }
     bool Rand()//absolutely random function
     {
@@ -43,7 +48,6 @@ public class Generator : MonoBehaviour
     {
         map = new  GameObject[xlen, ylen];
         Load_Rooms();
-        Generation();
     }
     void Load_Rooms() {
         bonus_room =  Resources.LoadAll<GameObject>("BonusRooms");
@@ -51,7 +55,7 @@ public class Generator : MonoBehaviour
         trap_room = Resources.LoadAll<GameObject>("TrapRooms");
         boss_room = Resources.LoadAll<GameObject>("BossRooms");
     }
-        // Update is called once per frame
+   
     
     void FixedUpdate() {
         if (Input.GetKey(KeyCode.Q))
@@ -159,6 +163,7 @@ public class Generator : MonoBehaviour
                 }
             }
         }
+        gameObject.GetComponent<Checking_character_position>().Change_pos();
     }
     void Clearing()
     {

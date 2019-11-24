@@ -11,7 +11,7 @@ public class Checking_character_position : MonoBehaviour //  Расчитыва�
     private Room_info curent_Room_info;  // Скрипт комнаты
     public Sounds_manager s_m;
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         character = GameObject.FindWithTag("Player").transform;
         Calc_pos();
