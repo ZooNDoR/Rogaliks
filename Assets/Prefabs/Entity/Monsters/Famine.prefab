@@ -58,7 +58,7 @@ MonoBehaviour:
   health: 70
   damage: 1
   attack_speed: 6
-  speed: 3.5
+  speed: 3
   number_keys: 0
   attack_system: {fileID: 7016580157208934055}
   greeting: {fileID: -2677330507379894438}

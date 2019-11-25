@@ -102,7 +102,7 @@ public class Entity : MonoBehaviour
         if (gameObject.tag == "Monster")
             GameObject.Find("logic").GetComponent<Score_manager>().Add_score(30);
         if(aud_die!=null)
-                s_m.Play_pls(aud_die);
+            s_m.Play_pls(aud_die);
         if(gameObject.GetComponent<Drop>())
             gameObject.GetComponent<Drop>().Drop_(transform.position);
         if(die_obj)
