@@ -11,10 +11,9 @@ public class Entity : MonoBehaviour
     public float damage;
     public float attack_speed;
     public float speed;
-    public float lifetime;
+    [HideInInspector]
     public int number_keys = 0;
-
-    public GameObject End_UI;
+    [HideInInspector]
     public Attack_system attack_system;
 
     public AudioSource greeting;        // Приветствие
@@ -35,12 +34,10 @@ public class Entity : MonoBehaviour
     void Start()
     {
         hearts_UI = GameObject.Find("UI_heart").gameObject.GetComponent<UI_hearts>();
-        // if (lifetime == 0)
-        //     lifetime = Infinity;
         s_m = GameObject.Find("SoundsManager").GetComponent<Sounds_manager>();
         attack_system = GetComponent<Attack_system>();
         if(gameObject.tag == "Player")
-                hearts_UI.Change_hearts(health);
+            hearts_UI.Change_hearts(health);
     }
     void FixedUpdate()
     {
@@ -93,9 +90,12 @@ public class Entity : MonoBehaviour
         }
     }
     public void Enable_entity(){
-        enable = true;
-        if (greeting!=null)
-            greeting.Play();
+        if(enable == false)
+        {
+            enable = true;
+            if (greeting!=null)
+                greeting.Play();
+        }
     }
     void Die(){
         enable = false;
