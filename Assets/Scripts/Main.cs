@@ -1,26 +1,47 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
+
 
 public class Main : MonoBehaviour
 {
 
-    public GameObject settingsMenu;
-    public GameObject mainMenu;
+    private float val = 1;
+    private float save = 1;
+    public Slider sl;
+    public AudioSource vol;
+    public AudioSource volClick;
 
-    // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
-        
+        val = PlayerPrefs.GetFloat("volume");
+        sl.value = val;
+        vol.volume = val;
+        volClick.volume = val;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void GameQuit() { Application.Quit(); }
+ 
+
+    public void SliderEvents(Slider sl)
     {
-        
+        val = sl.value;
+        sl.value = val;
+        SaveChanges();
     }
 
-    public void GameQuit(){
-        Application.Quit();
+    public void SaveChanges()
+    {
+       save = PlayerPrefs.GetFloat("volume");
+
+        if (save != val)
+        {
+            PlayerPrefs.SetFloat("volume", val);
+
+            
+            vol.volume = val;
+            volClick.volume = val;
+        }
     }
 }
